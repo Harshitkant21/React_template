@@ -1,0 +1,136 @@
+html{
+  scroll-padding-top: 3px;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:transparent ;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.bg-image{
+  background: url(./assests/image_1.png);
+  background-position: center;
+  background-size: cover;
+}
+.icon{
+  height: 20px;
+  width: 20px;
+}
+.nav-link{
+  color:white !important;
+}
+
+.color_span{
+  color: #fba419;
+}
+
+#butt{
+  background-color: #fba419;
+}
+
+.header{
+  background: url(./assests/image_1.png) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.about_image{
+  background: url(./assests/left_image.png) no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.text_inner {
+  position: absolute;
+  text-align: center;
+}
+
+.services{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color:black;
+  background: url(./assests/place_image.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.first_img{
+  position: relative;
+  width: 45%;
+  height: 90vh;
+  margin: auto !important;
+  background-color:black;
+  background: url(./assests/feature_1.png);
+  background-position: center;
+  background-size: cover;
+}
+.second_img{
+  position: relative;
+  width: 45%;
+  height: 90vh;
+  margin: auto !important;
+  background-color:black;
+  background: url(./assests/feature_2.png);
+  background-position: center;
+  background-size: cover;
+}
+.inner_process_content {
+  padding: 20px !important;
+}
+
+.team{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color:black;
+  background: url(./assests/business.png);
+  background-position: center;
+  background-size: cover;
+}
+.inner_team_images{
+  position: relative;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+@media (max-width: 450px) {
+  .header{
+    width: 100%;
+    height: 100vh;
+    background: url(./assests/image_1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #brand {
+    display: none;
+    left: auto;
+    position: relative;
+  }
+
+  #tog {
+    position: relative;
+    right: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+}
