@@ -1,5 +1,6 @@
 import {BrowserRouter as Router,Route,Routes,Link} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js"
 import './App.css';
 import Navbars  from "./Component/Navbar";
 import  Services from "./Component/Services";

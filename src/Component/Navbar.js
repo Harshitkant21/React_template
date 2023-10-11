@@ -1,47 +1,43 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
 import logo from '../assests/logo.png';
 import { FaFacebook } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs';
-import {BiLogInCircle} from 'react-icons/bi';
+import { BiBold, BiLogInCircle } from 'react-icons/bi';
 
 const Navbars = () => {
   return (
     <>
-        <Navbar expand="lg" className="bg-transperant">
-          <Container>
-            <div className='row w-100 mt-2'>
-                <div className='col-lg-1'>
-                    <Navbar.Brand href="#home" className='fs-4 fw-bold text-light' id='brand'><img src={logo} alt="logo here" style={{width:40,height:30}}/>Agency</Navbar.Brand>
-                </div>
-                <div className='col-lg-11 ps-auto d-flex justify-content-end'>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" className='ms-auto' id="tog" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto gap-lg-3 text-light">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/AboutUs">About Us</Nav.Link>
-                            <Nav.Link href="/Team">Team</Nav.Link>
-                            <Nav.Link href="/Services">Services</Nav.Link>
-                            <Nav.Link href="/Process">Process</Nav.Link>
-                            <Nav.Link href="/Client">Client</Nav.Link>
-                            <Nav.Link href="/Work">Work</Nav.Link>
-                            <Nav.Link to="/" target="_blank">
-                                <FaFacebook className="icon " />
-                            </Nav.Link>
-                            <Nav.Link href="/">
-                                <BsSearch className="icon" />
-                            </Nav.Link>
-                            <Nav.Link href="/">
-                                <BiLogInCircle className="icon" />
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold fs-4 p-lg-3 p-mb-2" href="/">
+                <img src={logo} alt="" width={30} height={24}/>Agency
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fs-6 fw-semibold">
+                        <a class="nav-link active mx-3" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/AboutUs">About Us</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/Team">Team</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/Services">Services</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/Process">Process</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/Client">Client</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/Work">Work</a>
+                        <a class="nav-link active mx-3" aria-current="page" href="https://www.linkedin.com/in/harshit-kant-856b36229/">
+                            <FaFacebook className="icon " />
+                        </a>
+                        <a class="nav-link active mx-3" aria-current="page" href="/">
+                            <BsSearch className="icon" />
+                        </a>
+                        <a class="nav-link active mx-2" aria-current="page" href="/">
+                            <BiLogInCircle className="icon" />
+                        </a>
+                    </div>
                 </div>
             </div>
-          </Container>
-      </Navbar><hr className='text-white'/>
+        </nav>
+        <hr className='text-light'/>
     </>
   )
 }
