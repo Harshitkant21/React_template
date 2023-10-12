@@ -10,6 +10,8 @@ import Process from "./Component/Process";
 import Client from "./Component/Client";
 import Work from "./Component/Work";
 import Home from "./Component/Home";
+import ContactUs from "./Component/ContactUs";
+import Portfolio from "./Component/Portfolio";
 function App() {
   return (
     <Router>
@@ -21,6 +23,8 @@ function App() {
         <Route path="/Process" element={<Process />}/>
         <Route path="/Client" element={<Client />}/>
         <Route path="/Work" element={<Work />}/>
+        <Route path="/Portfolio" element={<Portfolio />}/>
+        <Route path="/ContactUs" element={<ContactUs />}/>
       </Routes>
     </Router>
   );

@@ -1,0 +1,27 @@
+#success-message {
+    opacity: 0;
+}
+.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+    padding: 0 20% 0 20%;
+}
+.margin-top-25 {
+    margin-top: 25px;
+}
+.form-group .form-control {
+    -webkit-box-shadow: none;
+    border-bottom: 1px;
+    border-style: none none solid none;
+    border-radius:0;
+    border-color: #000;
+}
+.form-group .form-control:focus {
+    box-shadow: none;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+}
+textarea {
+    resize: none;
+}
+.icon-black{
+    color: #000;
+}

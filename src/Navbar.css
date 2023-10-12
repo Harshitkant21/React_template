@@ -1,0 +1,8 @@
+.offcanvas-black-bg {
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+  transition: background-color 0.3s; /* Add a transition for smooth effect */
+}
+
+.offcanvas-body.text-light {
+  color: white; /* Set text color to white */
+}

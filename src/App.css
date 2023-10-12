@@ -1,6 +1,7 @@
 html{
   scroll-padding-top: 3px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar{
@@ -29,9 +30,6 @@ html::-webkit-scrollbar-thumb{
   height: 20px;
   width: 20px;
 }
-.nav-link{
-  color:white !important;
-}
 .navbar-toggler-icon{
   color: aliceblue !important;
 }
@@ -46,7 +44,8 @@ html::-webkit-scrollbar-thumb{
 
 .header{
   background: url(./assests/image_1.png) no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -95,6 +94,11 @@ html::-webkit-scrollbar-thumb{
 .inner_process_content {
   padding: 20px !important;
 }
+.inner_process{
+  @media screen and (max-width:760px){
+    gap: 20px;
+  }
+}
 
 .team{
   position: relative;
@@ -112,4 +116,48 @@ html::-webkit-scrollbar-thumb{
 .font{
   font-size: smaller;
 }
+
+.image_case_2{
+  background: url(./assests/Place9.png);
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width:760px){
+    max-width: 400px;
+    margin-left: 12px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+.inner_touch_first{
+  background: url(./assests/Place11.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.inner_touch_second{
+  background-color: #f9f9f9;
+}
+
+.touch_content{
+  font-size: smaller;
+}
+
+.icon_black{
+  color: black;
+}
+
+.icon-white{
+  color: #f9f9f9;
+}
+
+.images_case{
+  @media screen and (max-width:760px){
+    display: flex;
+    gap: 10px;
+    height: max-content;
+   flex-direction: column;
+  }
+
+}
+
 
