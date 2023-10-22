@@ -161,3 +161,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+.container-fluid
+{
+  padding:0;
+}

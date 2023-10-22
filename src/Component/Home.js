@@ -22,7 +22,7 @@ import Footer from "./footer";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid m-0">
       {/* home starts here */}
       <div className="header">
         <div className="navigation">
@@ -371,7 +371,7 @@ const Home = () => {
               <p className="text-white fs-6 fw-normal">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ratione? Maiores dignissimos quasi voluptatem omnis dolorem culpa illo.
               </p>
-              <button type="button" className="col-lg-6 col-9 btn btn-warning text-light rounded-5" id="butt">
+              <button type="button" className="col-lg-6 col-12 btn btn-warning text-light rounded-5" id="butt">
                 <Link to="/ContactUs" className="text-decoration-none text-light">Click for Query</Link>
               </button>
             </div>
