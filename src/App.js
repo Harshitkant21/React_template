@@ -1,8 +1,7 @@
-import {BrowserRouter as Router,Route,Routes,Link} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js"
 import './App.css';
-import Navbars  from "./Component/Navbar";
 import  Services from "./Component/Services";
 import Team from "./Component/Team";
 import AboutUs from './Component/AboutUs';
@@ -12,6 +11,7 @@ import Work from "./Component/Work";
 import Home from "./Component/Home";
 import ContactUs from "./Component/ContactUs";
 import Portfolio from "./Component/Portfolio";
+import Login from "./Component/Login";
 function App() {
   return (
     <Router>
@@ -25,6 +25,7 @@ function App() {
         <Route path="/Work" element={<Work />}/>
         <Route path="/Portfolio" element={<Portfolio />}/>
         <Route path="/ContactUs" element={<ContactUs />}/>
+        <Route path="/Login" element={<Login/>}/>
       </Routes>
     </Router>
   );

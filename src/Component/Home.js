@@ -38,7 +38,7 @@ const Home = () => {
             </div>
             <div className="col-lg-7 col-0"></div>
             <div className="col-lg-5 col-12">
-              <p class="inner_content fs-6">
+              <p class="inner_content fs-6 fw-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam saepe reiciendis cumque eum. Eos provident tempora
                 ipsam.Laudantium, quaerat accusamus.
@@ -91,7 +91,7 @@ const Home = () => {
             </button>
           </div>
           <div className="about_image col-12 col-lg-6 fs-5 fw-bold d-flex flex-column justify-content-end flex-md-wrap ">
-            <div className="text_inner text-light mb-5 w-100 ">
+            <div className="text_inner text-primary mb-5 w-100">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>

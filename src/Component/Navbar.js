@@ -5,12 +5,13 @@ import { BsSearch } from 'react-icons/bs';
 import { BiLogInCircle } from 'react-icons/bi';
 import OffCanvasNavbar from './OffCanvasNavbar';
 import { Link } from 'react-router-dom';
+import '../Navbar.css';
 const Navbars = () => {
   return (
     <>
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
         <div className="container-fluid">
-          <Link className="navbar-brand text-light fw-bold fs-4 p-lg-3 p-mb-2" to="/">
+          <Link className="navbar-brand text-light fw-bold fs-4 p-lg-3 m-lg-0 m-3 " to="/">
             <img src={logo} alt="" width={30} height={24}/>Agency
           </Link>
           <button
@@ -53,7 +54,7 @@ const Navbars = () => {
                 </Link>
               </li>
               <li className="nav-item mx-4">
-                <Link className="nav-link active text-white" aria-current="page" to="/">
+                <Link className="nav-link active text-white" aria-current="page" to="/Login">
                     <BiLogInCircle className="icon" />
                 </Link>
               </li>

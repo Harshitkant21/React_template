@@ -1,11 +1,17 @@
 #success-message {
     opacity: 0;
 }
-.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
-    padding: 0 20% 0 20%;
+.contact{
+    padding-bottom: 7%;
 }
+/* .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+    padding-bottom: 10%;
+} */
 .margin-top-25 {
     margin-top: 25px;
+}
+.form-group{
+    width: 100%;
 }
 .form-group .form-control {
     -webkit-box-shadow: none;
@@ -22,6 +28,7 @@
 textarea {
     resize: none;
 }
+
 .icon-black{
     color: #000;
 }

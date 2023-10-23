@@ -61,7 +61,7 @@ const ContactUs = () => {
       };
   return (
     <>
-     <div className="container">
+     <div className="container contact">
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
           <h2 className="form-title m-4 m-lg-5 p-3 p-lg-3">Get in Touch</h2>
@@ -73,17 +73,17 @@ const ContactUs = () => {
           <form id="contact-form" name="myForm" className="form" action="#" onSubmit={validateForm} method="GET" role="form">
             <div className="form-group">
               <label className="form-label" id="nameLabel" htmlFor="name"></label>
-              <input type="text" className="form-control" id="name" name="name" placeholder="Your name" tabIndex="1"/>
+              <input type="text" className="form-control input2" id="name" name="name" placeholder="Your name" tabIndex="1"/>
             </div>
 
             <div className="form-group">
               <label className="form-label" id="emailLabel" htmlFor="email"></label>
-              <input type="email" className="form-control" id="email" name="email" placeholder="Your Email" tabIndex="2" />
+              <input type="email" className="form-control input2" id="email" name="email" placeholder="Your Email" tabIndex="2" />
             </div>
 
             <div className="form-group">
               <label className="form-label" id="subjectLabel" htmlFor="subject"></label>
-              <input type="text" className="form-control" id="subject" name="subject" placeholder="Subject" tabIndex="3" />
+              <input type="text" className="form-control input2" id="subject" name="subject" placeholder="Subject" tabIndex="3" />
             </div>
 
             <div className="form-group">
@@ -92,10 +92,10 @@ const ContactUs = () => {
             </div>
 
             <div className="text-center m-4 m-lg-4">
-              <button type="submit" className="btn btn-outline-dark btn-large col-lg-6 col-9"> Send Message </button>
+              <button type="submit" className="btn btn-outline-dark btn-large col-lg-12 col-12"> Send Message </button>
             </div>
           </form>
-            <div className='back text-center'>
+            <div className='back1 text-center'>
                 <Link to="/">
                     <FontAwesomeIcon icon={faHouse} bounce className='icon-black'/>
                 </Link>
