@@ -91,7 +91,7 @@ const Home = () => {
             </button>
           </div>
           <div className="about_image col-12 col-lg-6 fs-5 fw-bold d-flex flex-column justify-content-end flex-md-wrap ">
-            <div className="text_inner text-primary mb-5 w-100">
+            <div className="text_inner text-light mb-5 w-100">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>

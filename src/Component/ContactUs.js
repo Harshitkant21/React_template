@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbars from './Navbar';
+import Footer from './footer';
 import "../ContactUs.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
@@ -61,6 +63,9 @@ const ContactUs = () => {
       };
   return (
     <>
+      <div className='bg-black'>
+        <Navbars/>
+      </div>
      <div className="container contact">
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -102,6 +107,9 @@ const ContactUs = () => {
             </div>
         </div>
       </div>
+    </div>
+    <div>
+      <Footer/>
     </div>
     </>
   )
