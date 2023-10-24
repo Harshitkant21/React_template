@@ -4,32 +4,30 @@ import Navbars from "./Navbar";
 import Footer from "./footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import '../Portfolio.css';
 const Portfolio = () => {
   return (
     <>
-    <div className="bg-black">
-      <Navbars/>
-    </div>
+      <div className="bg-black">
+        <Navbars />
+      </div>
       <div className="container">
-        <div className="text-center">
-          <div className="cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <main role="main" className="inner cover">
-              <h1 className="cover-heading">Portfolio</h1>
-              <p className="lead">In Development Phase</p>
-              <p className="lead">
-                <Link to="/">
-                  <FontAwesomeIcon
-                    icon={faHouse}
-                    bounce
-                    className="icon-black"
-                  />
-                </Link>
-              </p>
-            </main>
+        <div class="frame">
+          <div class="center">
+            <div class="carousel">
+              <div class="pre">I'm a </div>
+              <div class="change_outer">
+                <div class="change_inner">
+                  <div class="element">Developer</div>
+                  <div class="element">Designer</div>
+                  <div class="element">Entrepreneur</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

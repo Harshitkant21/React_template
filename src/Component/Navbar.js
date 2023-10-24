@@ -80,34 +80,6 @@ const Navbars = () => {
                     <BsSearch className="icon" />
                 </Link>
               </li>
-              {/* <li className="nav-item mx-4">
-                <Link
-                  className="nav-link active text-white"
-                  aria-current="page"
-                  to="/"
-                  onClick={handleIconClick}
-                >
-                  <BsSearch className="icon" />
-                </Link>
-                {isInputVisible && (
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    className="form-control"
-                    style={{
-                      position: "absolute",
-                      top: "80%",
-                      left: "70%",
-                      width: "20%",
-                      border: "1px solid transparent",
-                      borderRadius: "30px",
-                      background: "#E0E2D4",
-                      transition: 'all 0.6s ease-in-out',
-                    }}
-                  />
-                )}
-              </li> */}
-
               <li className="nav-item mx-4">
                 <Link
                   className="nav-link active text-white"

@@ -1,0 +1,83 @@
+.frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fba419;
+  color: #fff;
+}
+
+.center {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0  ;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 75px;
+  height: 75px;
+}
+
+.pre {
+  position: absolute;
+  top: 0;
+  right: 55%;
+  height: 25px;
+  text-shadow: 2px 2px 2px #e67e22;
+}
+
+.change_outer {
+  position: absolute;
+  top: 0;
+  left: 46%;
+  text-align: left;
+  height: 75px;
+  overflow: hidden;
+}
+
+.change_inner {
+  position: relative;
+  animation: rotate 8s ease-in-out infinite;
+}
+
+.element {
+  display: block;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #e67e22;
+}
+
+@keyframes rotate {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  33.33%,
+  53.33% {
+    transform: translateY(-75px);
+  }
+  66.66%,
+  86.66% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-225px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    font-size: 20px;
+    line-height: 65px;
+    height: 10px;
+  }
+  .pre {
+    right: 50%;
+  }
+  .change_outer {
+    left: 55%;
+  }
+}
