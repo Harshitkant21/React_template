@@ -76,8 +76,12 @@ const Navbars = () => {
                 </Link>
               </li>
               <li className="nav-item mx-4">
-                <Link className="nav-link active text-white" aria-current="page" to="/">
-                    <BsSearch className="icon" />
+                <Link
+                  className="nav-link active text-white"
+                  aria-current="page"
+                  to="/"
+                >
+                  <BsSearch className="icon" />
                 </Link>
               </li>
               <li className="nav-item mx-4">

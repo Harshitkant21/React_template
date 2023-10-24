@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import Navbars from "./Navbar";
 import Footer from "./footer";
-import '../Aboutus.css';
+import "../Aboutus.css";
+import image2 from "../assests/Place2.png";
 const AboutUs = () => {
   return (
     <>
@@ -14,10 +15,7 @@ const AboutUs = () => {
       <div className="container">
         <div class="aboutAuthor">
           <div class="K2_bio">
-            <img
-              alt="About "
-              src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D"
-            />
+            <img alt="About " src={image2} />
 
             <h2> Harshit Kant</h2>
             <div class="h-divider">
