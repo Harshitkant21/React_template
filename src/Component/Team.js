@@ -23,10 +23,15 @@ const Team = () => {
             </div>
             <p>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              pretium augue non orci pharetra, eget dictum ante sagittis.
-              Suspendisse eu nibh justo. Cras scelerisque urna lectus. Praesent
-              rhoncus ut risus quis convallis. Praesent nec lorem eros.
+              I am a passionate student of computer science who has a strong
+              commitment to cultivating creativity and a determined ambition to
+              make substantial contributions. The individual has a notable
+              ability to adapt and a great passion for seeking out new
+              educational opportunities. The person has a considerable degree of
+              proficiency in Java programming and web development, skillfully
+              using these capabilities to translate novel concepts into
+              practical manifestations. Committed to using creativity, optimism,
+              and expertise to provide support and empower people to flourish.
             </p>
             <div class="h-divider">
               <div class="shadow"></div>
