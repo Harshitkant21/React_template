@@ -14,10 +14,10 @@ const Navbars = () => {
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-transparent p-0">
+        <div className="container-fluid mx-5 mb-0 mt-1">
           <Link
-            className="navbar-brand text-light fw-bold fs-4 p-lg-3 m-lg-0 m-3 "
+            className="navbar-brand text-light fw-bold fs-4 p-lg-3 m-lg-0 m-3"
             to="/"
           >
             <img src={logo} alt="" width={30} height={24} />
@@ -34,48 +34,48 @@ const Navbars = () => {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav fs-6 fw-semibold">
-              <li className="nav-item mx-4">
+            <ul className="navbar-nav fw-semibold ms-auto">
+              <li className="nav-item mx-2">
                 <Link className="nav-link text-white " to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-2">
                 <Link className="nav-link text-white" to="/AboutUs">
                   About Us
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-2">
                 <Link className="nav-link text-white" to="/services">
                   Services
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-2">
                 <Link className="nav-link text-white" to="/portfolio">
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-2">
                 <Link className="nav-link text-white" to="/team">
                   Team
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-2">
                 <Link className="nav-link text-white" to="/contactus">
                   Contact
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-3">
                 <Link
                   className="nav-link text-white active"
                   aria-current="page"
-                  to="https://www.linkedin.com/in/harshit-kant-856b36229/"
+                  to="https://www.facebook.com/"
                   target="_blank"
                 >
                   <FaFacebook className="icon " />
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-3">
                 <Link
                   className="nav-link active text-white"
                   aria-current="page"
@@ -84,7 +84,7 @@ const Navbars = () => {
                   <BsSearch className="icon" />
                 </Link>
               </li>
-              <li className="nav-item mx-4">
+              <li className="nav-item mx-3">
                 <Link
                   className="nav-link active text-white"
                   aria-current="page"

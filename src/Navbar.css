@@ -1,3 +1,22 @@
+#navbarNav{
+  font-size: 15px;
+}
+.nav-item{
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.nav-item:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
 .offcanvas-black-bg {
   background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
   transition: background-color 0.3s; /* Add a transition for smooth effect */
