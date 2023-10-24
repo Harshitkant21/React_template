@@ -121,12 +121,7 @@ html::-webkit-scrollbar-thumb{
   background: url(./assests/Place9.png);
   background-position: center;
   background-size: cover;
-  @media screen and (max-width:760px){
-    max-width: 400px;
-    margin-left: 12px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
+
 }
 .inner_touch_first{
   background: url(./assests/Place11.png);

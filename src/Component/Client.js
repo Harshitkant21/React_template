@@ -4,11 +4,11 @@ import Footer from "./footer";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
-const Client = () => {
+const Process = () => {
   return (
     <>
       <Navbars />
-      <div>
+      <div className="container">
         Client
         <p className="lead">
           <Link to="/">
@@ -22,4 +22,4 @@ const Client = () => {
   );
 };
 
-export default Client;
+export default Process;

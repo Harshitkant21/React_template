@@ -5,7 +5,7 @@ import './App.css';
 import  Services from "./Component/Services";
 import Team from "./Component/Team";
 import AboutUs from './Component/AboutUs';
-import Process from "./Component/Process";
+import Process from './Component/Process'
 import Client from "./Component/Client";
 import Work from "./Component/Work";
 import Home from "./Component/Home";
@@ -20,7 +20,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />}/>
         <Route path="/Team" element={<Team />}/>
         <Route path="/Services" element={<Services />}/>
-        <Route path="/Process" element={<Process />}/>
+        <Route path="/Process" element={<Process/>}/>
         <Route path="/Client" element={<Client />}/>
         <Route path="/Work" element={<Work />}/>
         <Route path="/Portfolio" element={<Portfolio />}/>

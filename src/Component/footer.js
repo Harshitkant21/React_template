@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='footer'>
             <footer class="bg-black text-center text-white">
                 <div class="text-center p-3 p-lg-3">
-                    Copyright © 2023. <a class="text-white text-decoration-none col-2 col-lg-2" href='fee-project-phi.vercel.app/'> CLICK ME!!</a> |  Devloped by HARSHIT KANT
+                    Copyright © 2023. |  Devloped by HARSHIT KANT
                     <div className='back'>
                         <a href="/">
                             <FontAwesomeIcon icon={faHouse} bounce className="icon-white"/>

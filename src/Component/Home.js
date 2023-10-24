@@ -91,7 +91,7 @@ const Home = () => {
             </button>
           </div>
           <div className="about_image col-12 col-lg-6 fs-5 fw-bold d-flex flex-column justify-content-end flex-md-wrap ">
-            <div className="text_inner text-light mb-5 w-100">
+            <div className="text_inner text-light mb-5">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
@@ -293,17 +293,19 @@ const Home = () => {
           </div>
           <div className="images_case row flex-wrap m-2 mt-lg-5 p-2 pt-lg-5">
             <div className="image_case_1 col-lg-4 col-12">
-              <img src={image8} alt="image_here" width={400} height={250}/>
+              <img src={image8} alt="image_here" height={250} className="w-100"/>
             </div>
-            <div className="image_case_2 col-lg-4 col-12 text-center text-lg-center d-flex flex-column justify-content-center align-items-center">
+            <div className="col-lg-4 col-12">
+              <div className="image_case_2 text-center text-lg-center d-flex flex-column justify-content-center align-items-center w-100 p-3 h-100">
               <p className="color_span fs-5 fw-bold">Lorem Ipsum Dolor</p>
               <p className="text-white fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus debitis fugiat dignissimos, accusantium amet Lorem ipsum dolor sit amet .</p>
               <button type="button" className="col-lg-6 col-9 btn btn-warning text-light rounded-5" id="butt">
                     Read More
               </button>
+              </div>
             </div>
             <div className="image_case_3 col-lg-4 col-12">
-              <img src={image10} alt="image_here" width={400} height={250}/>
+              <img src={image10} alt="image_here" height={250} className="w-100"/>
             </div>
           </div>
         </div>
@@ -320,11 +322,11 @@ const Home = () => {
             <div className="second_content col-12 col-lg-4 text-center text-lg-center">
               <img src={image2} alt="person_here" width={200} height={250}/>
             </div>
-            <div className="third_content row col-12 col-lg-4 text-center text-lg-start m-3 m-lg-0">
+            <div className="third_content row col-12 col-lg-4 text-center text-lg-start">
                 <div className="img col-1 col-lg-2">
                   <img src={quote} alt="quote here" width={35} height={25} />
                 </div>
-                <div className="text fs-6 fw-light text-black col-11 col-lg-10">
+                <div className="text fs-6 fw-light text-black col-12 col-lg-10">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -337,15 +339,15 @@ const Home = () => {
                 </div>
             </div>
           </div>
-          <div className="row_2 row m-lg-0 p-lg-5">
+          <div className="row_2 row ">
             <div className="second_content col-12 col-lg-4 text-center text-lg-center">
               <img src={image1} alt="person_here" width={200} height={250}/>
             </div>
-            <div className="third_content row col-12 col-lg-4 text-center text-lg-start m-3 m-lg-0">
+            <div className="third_content row col-12 col-lg-4 text-center text-lg-start ">
                 <div className="img col-1 col-lg-2">
                   <img src={quote} alt="quote here" width={35} height={25} />
                 </div>
-                <div className="text fs-6 fw-light text-black col-11 col-lg-10">
+                <div className="text fs-6 fw-light text-black col-12 col-lg-10">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -391,7 +393,7 @@ const Home = () => {
                   <div className="col-2 col-lg-2">
                       <img src={item5} alt="icon 1" width={45} height={45} />
                   </div>
-                  <div className="icon1_content col-10 col-lg-10 text-lg-start text-start">
+                  <div className="icon1_content col-10 col-lg-10 text-lg-start text-start text-break">
                     <p className="text-black fw-semibold fs-4">Email</p>
                     <p className="text-black fw-normal fs-6">harshit0576.be21@chitkara.edu.in</p>
                   </div>
