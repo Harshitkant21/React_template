@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbars from "./Navbar";
 import Footer from "./footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import '../Portfolio.css';
 const Portfolio = () => {
   return (

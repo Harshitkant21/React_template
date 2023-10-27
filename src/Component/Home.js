@@ -46,9 +46,10 @@ const Home = () => {
             <div className="col-lg-7 col-0"></div>
             <div className="col-lg-5 col-12">
               <p class="inner_content fs-6 fw-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam saepe reiciendis cumque eum. Eos provident tempora
-                ipsam.Laudantium, quaerat accusamus.
+                Agency is committed to provide the best discounts on a broad
+                variety of goods and services. We provide web design, marketing,
+                networking, and graphics. Discover amazing deals on our website
+                now!!
               </p>
             </div>
             <div className="col-lg-7 col-0"></div>
@@ -77,18 +78,19 @@ const Home = () => {
               </div>
               <div className="text fs-6 fw-light text-black me-lg-1 mt-lg-2">
                 <p className="w-100 text-center text-lg-start">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  At Agency, we provide both friendly service and serious
+                  knowledge. For us, professionalism is knowing how to deal with
+                  the issues at hand. As a result, we've assembled a helpful
+                  online forum and library of materials to ensure your success.
                 </p>
               </div>
             </div>
             <div className="text fs-6 fw-light text-black d-flex justify-content-evenly mt-lg-4 text-center text-lg-start">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Here at Agency, we understand the difficulties and possibilities
+              that you confront as a professional. If you're an established
+              professional, a budding entrepreneur, an experienced CEO, or a new
+              college student, this site was built with you in mind. We are
+              completely dedicated to your success.
             </div>
             <div className="but mt-lg-5 mt-mb-2"></div>
             <Link to="/Read" className="text-decoration-none">
@@ -103,7 +105,7 @@ const Home = () => {
           </div>
           <div className="about_image col-12 col-lg-6 fs-5 fw-bold d-flex flex-column justify-content-end flex-md-wrap ">
             <div className="text_inner text-light mb-5">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Welcome to the Next Level of Professionalism</p>
             </div>
           </div>
         </div>
@@ -120,9 +122,11 @@ const Home = () => {
               </div>
               <div className="services_content2 fs-6 fw-light text-white justify-content-center w-100 col-12 col-lg-6">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Enim, sunt. Facilis incidunt dicta doloremque voluptas,
-                  adipisci ut.
+                  We strive hard and provide great service. Our tailored
+                  services help you achieve. Our expert staff guarantee project
+                  success. Thinking forward lets us provide unique services. All
+                  we want is happy customers. Our goods are great. Success takes
+                  teamwork, so choose Agency.
                 </p>
               </div>
             </div>
@@ -138,11 +142,12 @@ const Home = () => {
                     <img src={item1} alt="icon 1" width={50} height={50} />
                   </div>
                   <div className="icon1_content text-center text-lg-start col-lg-10 mt-lg-0 mt-0">
-                    <p className="color_span fw-bold fs-3">Creative Works</p>
+                    <p className="color_span fw-bold fs-3 text-uppercase">
+                      Graphics
+                    </p>
                     <p className="font text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Nulla id cum repellat libero fugiat maiores hic natus
-                      suscipit voluptatibus enim.
+                      Injecting your brand with artistic flare, our graphic
+                      designers produce eye-catching, memorable images.
                     </p>
                   </div>
                 </div>
@@ -151,11 +156,12 @@ const Home = () => {
                     <img src={item2} alt="icon 1" width={50} height={50} />
                   </div>
                   <div className="icon1_content text-center text-lg-start col-lg-10 mt-lg-0 mt-0">
-                    <p className="color_span fw-bold fs-3">Creative Works</p>
+                    <p className="color_span fw-bold fs-3">Web Design</p>
                     <p className="font text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Nulla id cum repellat libero fugiat maiores hic natus
-                      suscipit voluptatibus enim.
+                      Our agency provides exceptional services to boost
+                      customers' internet operations. To increase your online
+                      visibility and audience engagement, our web designers
+                      construct appealing, user-friendly websites.
                     </p>
                   </div>
                 </div>
@@ -164,11 +170,11 @@ const Home = () => {
                     <img src={item3} alt="icon 1" width={50} height={50} />
                   </div>
                   <div className="icon1_content text-center text-lg-start col-lg-10 mt-lg-0 mt-0">
-                    <p className="color_span fw-bold fs-3">Creative Works</p>
+                    <p className="color_span fw-bold fs-3">Marketing</p>
                     <p className="font text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Nulla id cum repellat libero fugiat maiores hic natus
-                      suscipit voluptatibus enim.
+                      Data-driven marketing from our professionals boosts your
+                      business. Our SEO and social media marketing may boost
+                      your business.
                     </p>
                   </div>
                 </div>
@@ -177,11 +183,11 @@ const Home = () => {
                     <img src={item4} alt="icon 1" width={50} height={50} />
                   </div>
                   <div className="icon1_content text-center text-lg-start col-lg-10 mt-lg-0 mt-0">
-                    <p className="color_span fw-bold fs-3">Creative Works</p>
+                    <p className="color_span fw-bold fs-3">Networking</p>
                     <p className="font text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Nulla id cum repellat libero fugiat maiores hic natus
-                      suscipit voluptatibus enim.
+                      With our networking solutions, your company can count on
+                      uninterrupted connectivity, streamlined data flow, and
+                      robust security.
                     </p>
                   </div>
                 </div>
@@ -197,10 +203,10 @@ const Home = () => {
           <div className="first_img text-center justify-content-lg-center flex-lg-column d-flex justify-content-center flex-column col-lg-3 col-10">
             <div className="img2 fs-5 fw-semibold">
               <img src={item1} alt="icon 1" width={50} height={50} />
-              <p className="color_span ">Creative</p>
+              <p className="color_span ">GRAPHICS</p>
               <p className="text-light fs-6 fw-normal m-lg-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt reiciendis libero soluta accusamus ullam ipsum eum.
+                Injecting your brand with artistic flare, our graphic designers
+                produce eye-catching, memorable images.
               </p>
               <Link to="/Read" className="text-decoration-none">
                 <button
@@ -216,10 +222,11 @@ const Home = () => {
           <div className="second_img text-center d-lg-flex justify-content-lg-center flex-lg-column d-flex justify-content-center flex-column col-lg-3 col-10">
             <div className="img2 fs-5 fw-semibold">
               <img src={item4} alt="icon 1" width={50} height={50} />
-              <p className="color_span ">Creative</p>
+              <p className="color_span ">Networking</p>
               <p className="text-light fs-6 fw-normal m-lg-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt reiciendis libero soluta accusamus ullam ipsum eum.
+                With our networking solutions, your company can count on
+                uninterrupted connectivity, streamlined data flow, and robust
+                security.
               </p>
               <Link to="/Read" className="text-decoration-none">
                 <button
@@ -237,10 +244,9 @@ const Home = () => {
             <p className="color_span fs-2 fw-bold">for Professionals</p>
             <div className="text fs-6 fw-light text-black text-center text-lg-start">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                We prioritise efficiency and effectiveness at Agency to ensure
+                your happiness and corporate success. Our careful approach
+                creates a productive and pleasant working relationship.
               </p>
             </div>
             <div className="second_last d-lg-flex d-flex flex-lg-row col-lg-12 col-12 text-start">
@@ -254,19 +260,19 @@ const Home = () => {
               </div>
               <div className="img4_content fs-6 fw-semibold col-12">
                 <p className="para mt-lg-2 mb-lg-4 mb-1">
-                  Lorem ipsum dolor sitconsectetur adipiscing
+                  Each meeting begins with a discussion of goals.
                 </p>
                 <p className="para mb-lg-4 mb-1">
-                  Lorem ipsum dolor sitconsectetur adipiscing
+                  We create a plan tailored to your objectives.
                 </p>
                 <p className="para mb-lg-4 mb-1">
-                  Lorem ipsum dolor sitconsectetur adipiscing
+                  We apply design,marketing, networking, images.
                 </p>
                 <p className="para mb-lg-4 mb-1">
-                  Lorem ipsum dolor sitconsectetur adipiscing
+                  Our findings determine our modifications.
                 </p>
                 <p className="para mb-lg-4 mb-1">
-                  Lorem ipsum dolor sitconsectetur adipiscing
+                  Tracks progress with transparent reporting.
                 </p>
               </div>
             </div>
@@ -279,17 +285,19 @@ const Home = () => {
         <div className="inner_team m-lg-5 m-1 p-lg-5 p-1 row">
           <div className="inner_team_content_1 text-light fs-1 fw-bold text-center text-lg-center col-12 col-lg-12 m-2 p-2 m-lg-0 p-lg-0">
             <p className="text-light fs-1 fw-bold d-inline-block ">
-              Buisness &nbsp;
+              Business &nbsp;
             </p>
             <p className="color_span fs-1 fw-bold d-inline-block ">Team</p>
           </div>
           <div className="inner_team_content_2">
             <p className="text-light fs-6 fw-normal text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              libero sit cum neque vel veritatis? Quos ratione voluptas soluta,
-              est facilis delectus impedit nobis quidem ut aliquam eligendi,
-              minus sapiente? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quasi earum nobis adipisci ad.
+              Learn more about the dedicated people that make up Agency by
+              talking to them. Our team is made up of a diverse group of highly
+              experienced people, each of whom brings a significant amount of
+              their own unique experience, knowledge, and perspective to the
+              table. We are passionate about the job that we do and are
+              committed to supporting you in accomplishing the goals that you
+              have set for yourself.
             </p>
           </div>
           <div className="inner_team_images row justify-content-lg-center justify-content-sm-center align-items-center m-1 m-lg-4 p-1 p-lg-1">
@@ -343,10 +351,10 @@ const Home = () => {
             <p className="color_span fs-1 fw-bold d-inline-block ">Study</p>
           </div>
           <div className="inner_case_content_1 text-center text-lg-center fw-semibold fs-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-            repudiandae distinctio molestiae. Repellendus repellat, autem
-            praesentium saepe similique ab, consequuntur, enim dicta sequi in
-            exercitationem tempore.
+            Discover some of the concrete outcomes of working with our
+            organisation. Using these examples, we can see how Agency has helped
+            different businesses overcome unique obstacles and accomplish
+            remarkable feats via collaborative efforts.
           </div>
           <div className="images_case row flex-wrap m-2 mt-lg-5 p-2 pt-lg-5">
             <div className="image_case_1 col-lg-4 col-12">
@@ -359,11 +367,12 @@ const Home = () => {
             </div>
             <div className="col-lg-4 col-12">
               <div className="image_case_2 text-center text-lg-center d-flex flex-column justify-content-center align-items-center w-100 p-3 h-100">
-                <p className="color_span fs-5 fw-bold">Lorem Ipsum Dolor</p>
+                <p className="color_span fs-5 fw-bold">Scaffold Supply, USA</p>
                 <p className="text-white fs-6">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Tempore possimus debitis fugiat dignissimos, accusantium amet
-                  Lorem ipsum dolor sit amet .
+                  Scaffold Supply, USA is the construction industry's trusted
+                  scaffolding supplier. They realised they needed to increase
+                  their internet presence to attract more clients and boost
+                  efficiency.
                 </p>
                 <Link to="/Read" className="text-decoration-none">
                   <button
@@ -405,12 +414,12 @@ const Home = () => {
               </div>
               <div className="text fs-6 fw-light text-black col-12 col-lg-10">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Scaffold Supply has been a vital business partner. Our web
+                  designers altered their online presence, and the results are
+                  impressive. Greater traffic and leads have made an impact.
+                  They endorse our services.
                 </p>
-                <p className="fw-bold fs-6">JOHN DEO,CEO</p>
+                <p className="fw-bold fs-6">Stephen Curry,CEO</p>
               </div>
             </div>
           </div>
@@ -424,12 +433,11 @@ const Home = () => {
               </div>
               <div className="text fs-6 fw-light text-black col-12 col-lg-10">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Agency has done so much for us in marketing and networking. We
+                  needed a strong internet presence as a fuel dispensing system
+                  company, but we immediately saw it would be difficult.
                 </p>
-                <p className="fw-bold fs-6">JOHN DEO,CEO</p>
+                <p className="fw-bold fs-6">Sarah Johnson,CMO</p>
               </div>
             </div>
           </div>
@@ -444,13 +452,12 @@ const Home = () => {
               <p className="text-white display-5 fw-bold">Get &nbsp;</p>
               <p className="color_span fs-1 fw-bold">in Touch</p>
               <p className="text-white fs-6 fw-normal">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium, ratione? Maiores dignissimos quasi voluptatem omnis
-                dolorem culpa illo.
+                Ask us for help or guidance. Please use the form or email below
+                to contact us.
               </p>
               <button
                 type="button"
-                className="col-lg-6 col-12 btn btn-warning text-light rounded-5"
+                className="col-lg-6 col-12 btn btn-warning text-light rounded-5 border-0"
                 id="butt"
               >
                 <Link
@@ -470,10 +477,9 @@ const Home = () => {
                   Agency
                 </a>
                 <p className="touch_content m-2 m-lg-2 p-2 p-lg-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  dolore voluptatem in, fugiat velit voluptatibus quibusdam,
-                  nobis delectus sed debitis autem expedita necessitatibus
-                  eveniet harum, distinctio dolorem sequi quasi temporibus.
+                  Need assistance, have questions, or want to discuss how our
+                  services might benefit your company? Our assistance is
+                  available. Please use these ways to contact us:
                 </p>
               </div>
               <div className="address_touch m-2 m-lg-3 p-2 p-lg-3">
@@ -507,7 +513,7 @@ const Home = () => {
                   <div className="icon1_content col-10 col-lg-10 text-lg-start text-start">
                     <p className="text-black fw-semibold fs-4">Address</p>
                     <p className="text-black fw-normal fs-6 col-12 col-lg-8">
-                      123, Main Road, New City, My Country,123456
+                      Chitkara University,Rajpura,Punjab
                     </p>
                   </div>
                 </div>

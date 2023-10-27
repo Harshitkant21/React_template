@@ -80,6 +80,7 @@ const Navbars = () => {
                   className="nav-link active text-white"
                   aria-current="page"
                   to="/"
+                  onClick={handleIconClick}
                 >
                   <BsSearch className="icon" />
                 </Link>
