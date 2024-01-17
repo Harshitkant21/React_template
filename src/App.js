@@ -13,6 +13,7 @@ import ContactUs from "./Component/ContactUs";
 import Portfolio from "./Component/Portfolio";
 import Login from "./Component/Login";
 import Read from "./Component/Read";
+import Signup from "./Component/Signup";
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Read" element={<Read />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
     </Router>
   );

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGooglePlusG,
@@ -7,114 +7,102 @@ import {
   faGithub,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import Navbars from "./Navbar";
+import Footer from "./footer";
 import "../login.css";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import Navbars from './Navbar';
-import Footer from './footer';
+
 const Login = () => {
-  useEffect(() => {
-    const container = document.getElementById("container");
-    const registerBtn = document.getElementById("register");
-    const loginBtn = document.getElementById("Login");
 
-    registerBtn.addEventListener("click", () => {
-      container.classList.add("active");
-    });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-    loginBtn.addEventListener("click", () => {
-      container.classList.remove("active");
-    });
-  }, []);
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const userData = {
+        uemail: email,
+        password: password,
+      };
+
+      const response = await axios.post("http://localhost:8000/login_users", userData);
+
+      if (response.status === 200) {
+        let d = response.data;
+        console.log(d.msg);
+        console.log(response.status);
+        navigate("/");
+      } else {
+        alert("Login failed. Please check your email and password.");
+      }
+    } catch (error) {
+      console.error("Error during Login:", error.message);
+      if (error.response) {
+        alert("Username not found");
+        console.log("Error message from server:", error.response.data);
+      } else if (error.request) {
+        console.log("No response received from server");
+      } else {
+        console.log("Error setting up the request", error.message);
+      }
+    }
+  };
+
   return (
     <>
-      <div className='bg-black'>
-        <Navbars/>
+      <div className="bg-black">
+        <Navbars />
       </div>
       <div className="container" id="container">
         <div className="form-container sign-up">
-          <form>
-            <div className="signupback">
-              <Link to="/">
-                <FontAwesomeIcon icon={faHouse} bounce className="iconsign" />
-              </Link>
-            </div>
-            <h1>Create Account</h1>
+          <form onSubmit={handleLogin}>
+            <h1>Login</h1>
             <div className="social-icons">
-              <Link>
+              <Link className="social">
                 <FontAwesomeIcon icon={faGooglePlusG} />
               </Link>
-              <Link>
+              <Link className="social">
                 <FontAwesomeIcon icon={faFacebook} />
               </Link>
-              <Link>
+              <Link className="social">
                 <FontAwesomeIcon icon={faGithub} />
               </Link>
-              <Link>
+              <Link className="social">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </Link>
             </div>
-            <span>or use your email to sign-up</span>
-            <input type="text" placeholder="Name" className="input1"/>
-            <input type="email" placeholder="Email" className="input1"/>
-            <input type="password" placeholder="Password" className="input1"/>
-            <button type="submit" className="button1">Sign-Up</button>
+            <span className="acc">or use your account</span>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="submit" className="btn btn-large col-lg-10 col-10 mx-auto" id="butt">Login</button>
+            <div className="options">
+
+              <Link to="/">Forgot your password?</Link>
+            </div>
           </form>
-        </div>
-        <div className="form-container sign-in">
-          <form>
-            <div className="loginback">
-              <Link to="/">
-                <FontAwesomeIcon icon={faHouse} bounce className="iconlog" />
-              </Link>
-            </div>
-            <h1>Sign-in</h1>
-            <div className="social-icons">
-              <Link>
-                <FontAwesomeIcon icon={faGooglePlusG} />
-              </Link>
-              <Link>
-                <FontAwesomeIcon icon={faFacebook} />
-              </Link>
-              <Link>
-                <FontAwesomeIcon icon={faGithub} />
-              </Link>
-              <Link>
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </Link>
-            </div>
-            <span>or use your email password</span>
-            <input type="email" placeholder="Email" className="input1"/>
-            <input type="password" placeholder="Password" className="input1"/>
-            <a href="/">Forget your password?</a>
-            <button type="submit" className="button1">Sign-In</button>
-          </form>
-        </div>
-        <div className="toggle-container">
-          <div className="toggle">
-            <div className="toggle-panel toggle-left">
-              <h1>Welcome Back!!</h1>
-              <p>Enter your personal details to use more exciting features</p>
-              <button className="hidden button1" id="Login">
-                Sign-In
-              </button>
-            </div>
-            <div className="toggle-panel toggle-right">
-              <h1>Hello, Friend!!</h1>
-              <p>
-                Register with your personal details to enjoy more exciting
-                features
-              </p>
-              <button className="hidden button1" id="register">
-                Sign-Up
-              </button>
-            </div>
+          <div className="alternative-signup">
+            <p>
+              Don't have an account? <Link to="/signup">Sign up here</Link>
+            </p>
           </div>
         </div>
       </div>
-      <div>
-        <Footer/>
-      </div>
+      <Footer />
     </>
   );
 };
+
 export default Login;

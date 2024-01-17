@@ -1,18 +1,27 @@
+import axios from "axios";
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbars from "./Navbar";
+import { useEffect, useState } from "react";
 import Footer from "./footer";
-import image2 from "../assests/Place2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import "../Team.css";
+
 const Team = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const getTeams = async () => {
+      const response = await axios.get("http://localhost:8080/businessteam");
+      console.log(response);
+      setData(response.data);
+    }
+    getTeams();
+  }, []);
   return (
     <>
       <div className="bg-black">
         <Navbars />
       </div>
       <div className="container">
-        <div class="aboutAuthor">
+        {/* <div class="aboutAuthor">
           <div class="K2_bio">
             <img alt="About " src={image2} />
 
@@ -42,6 +51,22 @@ const Team = () => {
               </Link>
             </p>
           </div>
+        </div> */}
+        <h1 className="fw-bold m-5">
+          Our <span className="color_span fs-1">Team</span>
+        </h1>
+        <div className="row teams">
+          {
+            data.map((e) => {
+              return <div class="card" style={{ width: "18rem" }}>
+                <img src={e.profile_picture} class="card-img-top" alt={e.profile_picture} />
+                <div class="card-body">
+                  <h5 class="card-title">{e.employee_name}</h5>
+                  <p class="card-text">{e.designation}</p>
+                </div>
+              </div>
+            })
+          }
         </div>
       </div>
       <div>

@@ -29,7 +29,7 @@ const OffCanvasNavbar = () => {
             <Link className="nav-link" to="/team">Team</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact">Contact</Link>
+            <Link className="nav-link" to="/contactus">Contact</Link>
           </li>
           <li className="nav-item mx-4">
             <Link className="nav-link active" aria-current="page" to="https://www.linkedin.com/in/harshit-kant-856b36229/" target='_blank'>
