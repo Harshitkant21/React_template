@@ -42,7 +42,7 @@ const OffCanvasNavbar = () => {
             </Link>
             </li>
             <li className="nav-item mx-4">
-            <Link className="nav-link active" aria-current="page" to="/">
+            <Link className="nav-link active" aria-current="page" to="/Login">
                 <BiLogInCircle className="icon" />
             </Link>
             </li>

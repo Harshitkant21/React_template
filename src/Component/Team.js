@@ -55,10 +55,10 @@ const Team = () => {
         <h1 className="fw-bold m-5">
           Our <span className="color_span fs-1">Team</span>
         </h1>
-        <div className="row teams">
+        <div className="teams">
           {
             data.map((e) => {
-              return <div class="card" style={{ width: "18rem" }}>
+              return <div class="card" style={{ width: "10rem" }}>
                 <img src={e.profile_picture} class="card-img-top" alt={e.profile_picture} />
                 <div class="card-body">
                   <h5 class="card-title">{e.employee_name}</h5>

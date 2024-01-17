@@ -1,10 +1,10 @@
-.service_row {
+.teams {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
 }
 
-.addonservice {
+/* .addonservice {
   text-align: center;
   padding: 25px 10px;
   border-radius: 5px;
@@ -36,4 +36,4 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-}
+} */
