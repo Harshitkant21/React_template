@@ -20,54 +20,23 @@ const Team = () => {
       <div className="bg-black">
         <Navbars />
       </div>
-      <div className="container">
-        {/* <div class="aboutAuthor">
-          <div class="K2_bio">
-            <img alt="About " src={image2} />
-
-            <h2> Harshit Kant</h2>
-            <div class="h-divider">
-              <div class="shadow"></div>
-              <div class="text2"></div>
-            </div>
-            <p>
-              {" "}
-              I am a passionate student of computer science who has a strong
-              commitment to cultivating creativity and a determined ambition to
-              make substantial contributions. The individual has a notable
-              ability to adapt and a great passion for seeking out new
-              educational opportunities. The person has a considerable degree of
-              proficiency in Java programming and web development, skillfully
-              using these capabilities to translate novel concepts into
-              practical manifestations. Committed to using creativity, optimism,
-              and expertise to provide support and empower people to flourish.
-            </p>
-            <div class="h-divider">
-              <div class="shadow"></div>
-            </div>
-            <p className="lead">
-              <Link to="/">
-                <FontAwesomeIcon icon={faHouse} bounce className="icon-black" />
-              </Link>
-            </p>
-          </div>
-        </div> */}
+      <div className="container ">
         <h1 className="fw-bold m-5">
           Our <span className="color_span fs-1">Team</span>
         </h1>
-        <div className="teams">
-          {
-            data.map((e) => {
-              return <div class="card" style={{ width: "10rem" }}>
-                <img src={e.profile_picture} class="card-img-top" alt={e.profile_picture} />
-                <div class="card-body">
-                  <h5 class="card-title">{e.employee_name}</h5>
-                  <p class="card-text">{e.designation}</p>
-                </div>
+        <div className="teams d-flex flex-wrap justify-content-around align-items-center">
+          {data.map((employee) => (
+            <div className="card mb-4" style={{ width: "18rem", backgroundColor: "#fff", color: "#333", borderRadius: "10px", overflow: "hidden", boxShadow: "inset 0 0 10px rgba(0, 0, 0, 0.3)" }} key={employee.id}>
+              <img src={employee.profile_picture} className="card-img-top" alt={employee.employee_name} style={{ width: "100%", height: "200px", objectFit: "cover", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} />
+              <div className="card-body">
+                <h5 className="card-title">{employee.employee_name}</h5>
+                <p className="card-text">{employee.designation}</p>
               </div>
-            })
-          }
+            </div>
+          ))}
         </div>
+
+
       </div>
       <div>
         <Footer />

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Navbars from "./Navbar";
 import quote from "../assests/quote.png";
 import item1 from "../assests/Icon_1.png";
@@ -27,7 +28,18 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
 const Home = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const getTestimonials = async () => {
+      const response = await axios.get("http://localhost:8080/testimonials");
+      console.log(response);
+      setData(response.data);
+    }
+    getTestimonials();
+  }, []);
   return (
     <div className="container-fluid m-0">
       {/* home starts here */}
@@ -399,50 +411,29 @@ const Home = () => {
       {/* fifth content ends here */}
       {/* sixth content start here */}
       <div className="testimonials">
-        <div className="inner-testimonials m-lg-5 m-1 p-lg-5 p-1 row">
-          <div className="row_1 row m-lg-0 p-lg-5 m-0 p-0">
-            <div className="first_content col-12 col-lg-4 text-center text-lg-center">
-              <p className="text-black fs-1 fw-bold">Client</p>
-              <p className="color_span fs-2 fw-bold">testimonials</p>
-            </div>
-            <div className="second_content col-12 col-lg-4 text-center text-lg-center">
-              <img src={image2} alt="person_here" width={200} height={250} />
-            </div>
-            <div className="third_content row col-12 col-lg-4 text-center text-lg-start">
-              <div className="img col-1 col-lg-2">
-                <img src={quote} alt="quote here" width={35} height={25} />
-              </div>
-              <div className="text fs-6 fw-light text-black col-12 col-lg-10">
-                <p>
-                  Scaffold Supply has been a vital business partner. Our web
-                  designers altered their online presence, and the results are
-                  impressive. Greater traffic and leads have made an impact.
-                  They endorse our services.
-                </p>
-                <p className="fw-bold fs-6">Stephen Curry,CEO</p>
-              </div>
-            </div>
+        <div className="m-lg-5 m-1 p-lg-5 p-1 h-75">
+          <div className="text-light fs-1 fw-bold text-center text-lg-center col-12 col-lg-12 m-0 p-0 m-lg-0 p-lg-0">
+            <p className="text-black fs-1 fw-bold d-inline-block">Client&nbsp;</p>
+            <p className="color_span fs-1 fw-bold d-inline-block">Testimonials</p>
           </div>
-          <div className="row_2 row ">
-            <div className="second_content col-12 col-lg-4 text-center text-lg-center">
-              <img src={image1} alt="person_here" width={200} height={250} />
-            </div>
-            <div className="third_content row col-12 col-lg-4 text-center text-lg-start ">
-              <div className="img col-1 col-lg-2">
-                <img src={quote} alt="quote here" width={35} height={25} />
+          <div className="row testimonials-row overflow-auto d-flex flex-wrap justify-content-around align-items-center">
+            {data.map((e) => (
+              <div className="col-12 col-md-6 col-lg-3 mb-4" key={e.id}>
+                <div className="card h-100 border-0 shadow-lg mt-5 mb-5">
+                  <div className="card-img-top p-3" style={{ backgroundColor: '#fff', borderRadius: '10px 10px 0 0'}}>
+                    <img src={e.image} alt={e.image} className="rounded-circle" style={{ width: "100%",height: "200px", objectFit: "cover", borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }} />
+                  </div>
+                  <div className="card-body p-3">
+                    <h5 className="card-title mb-1">{e.uname}</h5>
+                    <p className="card-text">{e.testimonial}</p>
+                  </div>
+                </div>
               </div>
-              <div className="text fs-6 fw-light text-black col-12 col-lg-10">
-                <p>
-                  Agency has done so much for us in marketing and networking. We
-                  needed a strong internet presence as a fuel dispensing system
-                  company, but we immediately saw it would be difficult.
-                </p>
-                <p className="fw-bold fs-6">Sarah Johnson,CMO</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
       {/* sixth content ends here */}
       {/* seventh content start here */}
       <div className="touch">
